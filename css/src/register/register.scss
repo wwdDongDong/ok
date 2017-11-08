@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.registerContent{
+   width: rem(583);
+   margin: 0 auto;
+   .registerCode{
+       overflow: hidden;
+        zoom: 1;
+        position: relative;
+        &>input{
+            position: absolute;
+            z-index: 1;
+        }
+        &>div{
+            right: rem(10);
+        }
+   }
+   .registerPicture{
+       position: relative;
+       &>div{
+        position: absolute;
+        right: rem(10);
+        top: rem(15);
+         width: rem(180);
+         height: rem(60);
+         border: rem(1) solid gray;  
+       }
+   }
+    .registerTel,.registerPicture,.registerCode,.registerPwd,.recommit,.agree_protocal{
+        width:100%;
+        height: rem(88);
+        line-height: rem(88);
+        border-bottom:rem(1) solid gray;
+        font-size: rem(27);
+        font-family: "宋体";
+        &>input{
+            width: 75%;
+            height: rem(88);
+            border: none;
+            background: none;
+            outline: none;
+            font-size: rem(27);
+            font-family: "宋体";
+            float: left;
+            padding-left: rem(11);
+        }
+    }
+    .get_code{
+        top: rem(15);
+        height: rem(60);
+        &>button,&>div{
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            margin-right: rem(10);
+            width: rem(180);
+            height: rem(60);
+        }
+        &>div{
+            
+            z-index: 1;
+            box-shadow: 0 0 rem(10) 0 orangered;
+        }
+    }
+    .register{
+       width: rem(583);
+       height: rem(88);
+       margin-bottom: rem(38);
+
+        &>button,&>div{
+            position: absolute;
+            width: rem(400);
+            height: rem(88);
+            left: 18%;
+        }
+       &>div{
+            margin: 0 auto;
+            z-index: 1;
+            box-shadow: 0 0 rem(10) 0 orangered;
+        }
+    }
+    .recommit,.agree_protocal{
+        border-bottom: none;
+        
+    }
+    .recommit{
+        color: yellow;
+    }
+    .hadAccount{
+        width: 100%;
+        font-size: rem(27);
+        color: orange;
+        text-align: center;
+    }
+}

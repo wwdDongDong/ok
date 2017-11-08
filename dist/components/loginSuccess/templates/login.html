@@ -1,0 +1,29 @@
+	<header>
+		<img src="../../../img/bg-login@2x.png" class="twoPng"/>
+		<img src="../../../img/bg-login@3x.png" class="threePng"/>
+	</header>
+	<div class="loginContent" ng-controller="Login">
+		<div class="loginTel">
+			<input type="text" placeholder="手机号" class="login_name"/>
+			<div class="line_animation"></div>
+			<span class="close_loginName">X</span>
+		</div>
+		<div class="loginPwd">
+			<input type="password" placeholder="密码" class="login_pwd"/>
+			<div class="line_animation"></div>
+			<img src="../../../img/eyes-close@2x.png" class="eyeSC"/>
+			<img src="../../../img/eyes-close@3x.png" class="eyeBC"/>
+			<img src="../../../img/eyes-open@2x.png" class="eyeSO" />
+			<img src="../../../img/eyes-open@3x.png" class="eyeBO" />
+			<span class="coloe_loginPwd">X</span>
+		</div>
+		<div class="forgetPwd">
+			<span class="logCommit"></span>
+			<a ui-sref='changPwd'>忘记密码？</a>
+		</div>
+		<div class="btn Login">
+			<button id="logBtn">登录</button>
+			<div></div>
+		</div>
+		<div class="registImadia">还没有账号？<span ui-sref='register'>注册</span></div>
+	</div>

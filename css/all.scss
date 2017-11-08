@@ -1,0 +1,60 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+}
+@function rem($px) {
+  @return $px / 45.75+rem;
+};
+$small-width:750px;
+$large-width:1125px;
+@mixin response($width) {
+  @if $width==$small-width {
+    @media screen and (max-width: $width) {
+      @content;
+    }
+  }
+  @else if $width==$large-width {
+    @media screen and (min-width: 751px) and (max-width:$width) {
+      @content;
+    }
+  }
+}
+header{
+  img {
+    width: 100%;
+  }
+  .twoPng {
+    display: none;
+  }
+}
+header,.lgSuContent,.rgSuContent {
+  @include response($small-width) {
+    .twoPng {
+      display: block;
+    }
+    .threePng {
+      display: none;
+    }
+  }
+  @include response($large-width) {
+    .twoPng {
+      display: none;
+    }
+    .threePng {
+      display: block;
+    }
+  }
+}
+@import "./src/login/login";
+@import "./src/login/loginSuccess";
+@import "./src/register/register";
+@import "./src/register/registerSuccess";
+@import "./src/changepwd/changeWD";
+
+
+
+

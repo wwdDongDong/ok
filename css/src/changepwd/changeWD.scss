@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.changeContent{
+   width: rem(583);
+   margin: 0 auto;
+   .changeCode{
+       overflow: hidden;
+        zoom: 1;
+        position: relative;
+        &>input{
+            position: absolute;
+            z-index: 1;
+        }
+        &>div{
+            right: rem(10);
+        }
+   }
+   .changePicture{
+       position: relative;
+       &>div{
+        position: absolute;
+        right: rem(10);
+        top: rem(15);
+         width: rem(180);
+         height: rem(60);
+         border: rem(1) solid gray;  
+         img{
+             width: 100%;
+         }
+       }
+   }
+    .changeTel,.changePicture,.changeCode,.changePwd{
+        width:100%;
+        height: rem(88);
+        line-height: rem(88);
+        border-bottom:rem(1) solid gray;
+        font-size: rem(27);
+        font-family: "宋体";
+        &>input{
+            width: 75%;
+            height: rem(88);
+            border: none;
+            background: none;
+            outline: none;
+            font-size: rem(27);
+            font-family: "宋体";
+            float: left;
+            padding-left: rem(11);
+        }
+    }
+    .got_code{
+        top: rem(15);
+        height: rem(60);
+        &>button,&>div{
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            margin-right: rem(10);
+            width: rem(180);
+            height: rem(60);
+        }
+        &>div{
+            
+            z-index: 1;
+            box-shadow: 0 0 rem(10) 0 orangered;
+        }
+    }
+    .change{
+       width: rem(583);
+       height: rem(88);
+       margin-top: rem(123);
+        &>button,&>div{
+            position: absolute;
+            width: rem(400);
+            height: rem(88);
+            left: 18%;
+        }
+       &>div{
+            margin: 0 auto;
+            z-index: 1;
+            box-shadow: 0 0 rem(10) 0 orangered;
+        }
+    }
+}
+.changeCommit{
+    font-size: rem(30);
+}

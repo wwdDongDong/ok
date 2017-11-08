@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.registerContent {
+  width: rem(583);
+  margin: 0 auto; }
+  .registerContent .registerCode {
+    overflow: hidden;
+    zoom: 1;
+    position: relative; }
+    .registerContent .registerCode > input {
+      position: absolute;
+      z-index: 1; }
+    .registerContent .registerCode > div {
+      right: rem(10); }
+  .registerContent .registerPicture {
+    position: relative; }
+    .registerContent .registerPicture > div {
+      position: absolute;
+      right: rem(10);
+      top: rem(15);
+      width: rem(180);
+      height: rem(60);
+      border: rem(1) solid gray; }
+  .registerContent .registerTel, .registerContent .registerPicture, .registerContent .registerCode, .registerContent .registerPwd, .registerContent .recommit, .registerContent .agree_protocal {
+    width: 100%;
+    height: rem(88);
+    line-height: rem(88);
+    border-bottom: rem(1) solid gray;
+    font-size: rem(27);
+    font-family: "瀹嬩綋"; }
+    .registerContent .registerTel > input, .registerContent .registerPicture > input, .registerContent .registerCode > input, .registerContent .registerPwd > input, .registerContent .recommit > input, .registerContent .agree_protocal > input {
+      width: 75%;
+      height: rem(88);
+      border: none;
+      background: none;
+      outline: none;
+      font-size: rem(27);
+      font-family: "瀹嬩綋";
+      float: left;
+      padding-left: rem(11); }
+  .registerContent .get_code {
+    top: rem(15);
+    height: rem(60); }
+    .registerContent .get_code > button, .registerContent .get_code > div {
+      position: absolute;
+      right: 0;
+      z-index: 2;
+      margin-right: rem(10);
+      width: rem(180);
+      height: rem(60); }
+    .registerContent .get_code > div {
+      z-index: 1;
+      box-shadow: 0 0 rem(10) 0 orangered; }
+  .registerContent .register {
+    width: rem(583);
+    height: rem(88);
+    margin-bottom: rem(38); }
+    .registerContent .register > button, .registerContent .register > div {
+      position: absolute;
+      width: rem(400);
+      height: rem(88);
+      left: 18%; }
+    .registerContent .register > div {
+      margin: 0 auto;
+      z-index: 1;
+      box-shadow: 0 0 rem(10) 0 orangered; }
+  .registerContent .recommit, .registerContent .agree_protocal {
+    border-bottom: none; }
+  .registerContent .recommit {
+    color: yellow; }
+  .registerContent .hadAccount {
+    width: 100%;
+    font-size: rem(27);
+    color: orange;
+    text-align: center; }
+
+/*# sourceMappingURL=register.css.map */
